@@ -1,4 +1,8 @@
-# Sistema de Tickets TI
+# TicketSystem
+
+Creación de solicitudes de ticket para llevar el control de atenciones de Soporte TI.
+
+## Sistema de Tickets TI
 
 Aplicación inicial con backend para registrar tickets públicos y administrarlos desde un panel privado de Soporte TI.
 
@@ -6,7 +10,7 @@ Aplicación inicial con backend para registrar tickets públicos y administrarlo
 
 - `/ticket`: formulario público para usuarios, sin login.
 - `/login`: acceso privado de Soporte TI.
-- `/dashboard`: panel protegido para ver pendientes, finalizados, todos, cerrar tickets y exportar reporte CSV compatible con Excel.
+- `/dashboard`: panel protegido para ver pendientes, finalizados, todos, cerrar tickets y exportar reporte Excel.
 
 ## Ejecutar localmente
 
