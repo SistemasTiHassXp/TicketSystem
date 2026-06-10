@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingresar ticket</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div>
+        <h1>Ingresar ticket</h1>
+        <p>Registro público de incidencias para seguimiento de Soporte TI.</p>
+      </div>
+      <nav>
+        <a class="button secondary" href="/login">Acceso TI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="message" id="message"></div>
+      <form class="grid-form" id="ticketForm">
+        <div class="field">
+          <label for="solicitante">Nombre del solicitante</label>
+          <input id="solicitante" name="solicitante" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="area">Área</label>
+          <select id="area" name="area" required></select>
+        </div>
+
+        <div class="field">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="jefe">Jefe inmediato</label>
+          <input id="jefe" name="jefe" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="correoJefe">Correo del jefe</label>
+          <input id="correoJefe" name="correoJefe" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="prioridad">Prioridad</label>
+          <select id="prioridad" name="prioridad" required></select>
+        </div>
+
+        <div class="field full">
+          <label for="tipo">Tipo de incidencia</label>
+          <select id="tipo" name="tipo" required></select>
+        </div>
+
+        <div class="field full">
+          <label for="descripcion">Descripción del problema</label>
+          <textarea id="descripcion" name="descripcion" required></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="secondary" type="reset">Limpiar</button>
+          <button class="primary" type="submit">Registrar ticket</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="/ticket.js"></script>
+</body>
+</html>

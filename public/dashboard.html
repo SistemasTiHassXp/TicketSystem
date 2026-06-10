@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Soporte TI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div>
+        <h1>Panel Soporte TI</h1>
+        <p>Los tickets pendientes aparecen primero para evitar saturar la vista diaria.</p>
+      </div>
+      <nav>
+        <a class="button secondary" href="/ticket">Ingresar ticket</a>
+        <button class="danger" id="logoutButton" type="button">Cerrar sesión</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="toolbar">
+        <div class="filters">
+          <button class="secondary filter active" data-status="Pendiente" type="button">Pendientes</button>
+          <button class="secondary filter" data-status="Finalizado" type="button">Finalizados</button>
+          <button class="secondary filter" data-status="Todos" type="button">Todos</button>
+        </div>
+        <a class="button primary" id="exportLink" href="/api/export?status=Pendiente">Exportar Excel</a>
+      </div>
+
+      <div id="message" class="message"></div>
+      <div id="ticketContent"></div>
+    </section>
+  </main>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "to": "ana@hassxp.com",
+    "subject": "Ticket recibido TK-0001",
+    "text": "Hola Ana,\n\nHemos recibido tu ticket TK-0001 y se realizará el seguimiento correspondiente.\n\nTipo de incidencia: IMPRESORAS Y ESCÁNERES (No imprime, atasco, configuración)\nPrioridad: Media\nDescripción: impresora atascada\n\nSaludos,\nSoporte TI",
+    "logged_at": "2026-06-09T15:53:52.864Z"
+  },
+  {
+    "to": "SoporteTI@hassxp.com",
+    "subject": "Nuevo ticket TK-0001 - Media",
+    "text": "Se registró un nuevo ticket.\n\nCódigo: TK-0001\nSolicitante: Ana\nÁrea: RECURSOS HUMANOS\nCorreo: ana@hassxp.com\nJefe inmediato: gianella\nCorreo del jefe: undefined\nTipo de incidencia: IMPRESORAS Y ESCÁNERES (No imprime, atasco, configuración)\nPrioridad: Media\nEstado: Pendiente\nFecha: 2026-06-09T15:53:52.858Z\n\nDescripción:\nimpresora atascada",
+    "logged_at": "2026-06-09T15:53:52.917Z"
+  },
+  {
+    "to": "ana@hassxp.com",
+    "subject": "Ticket recibido TK-0002",
+    "text": "Hola Ana,\n\nHemos recibido tu ticket TK-0002 y se realizará el seguimiento correspondiente.\n\nTipo de incidencia: RED E INTERNET (Sin internet, lentitud, acceso a red)\nPrioridad: Alta\nDescripción: sin internet\n\nSaludos,\nSoporte TI",
+    "logged_at": "2026-06-09T16:03:54.575Z"
+  },
+  {
+    "to": "SoporteTI@hassxp.com",
+    "subject": "Nuevo ticket TK-0002 - Alta",
+    "text": "Se registró un nuevo ticket.\n\nCódigo: TK-0002\nSolicitante: Ana\nÁrea: RECURSOS HUMANOS\nCorreo: ana@hassxp.com\nJefe inmediato: gianella\nCorreo del jefe: undefined\nTipo de incidencia: RED E INTERNET (Sin internet, lentitud, acceso a red)\nPrioridad: Alta\nEstado: Pendiente\nFecha: 2026-06-09T16:03:54.565Z\n\nDescripción:\nsin internet",
+    "logged_at": "2026-06-09T16:03:54.602Z"
+  }
+]
