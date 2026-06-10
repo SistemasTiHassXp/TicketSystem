@@ -15,8 +15,22 @@ async function loadConfig() {
   const response = await fetch("/api/config");
   const config = await response.json();
   fillSelect("area", "Seleccione un área", config.areas);
+  fillSelect("jefe", "Seleccione un jefe", config.chiefs);
   fillSelect("tipo", "Seleccione el tipo de incidencia", config.incidentTypes);
   fillSelect("prioridad", "Seleccione una prioridad", config.priorities);
+
+  const jefeSelect = document.getElementById("jefe");
+  const correoJefeInput = document.getElementById("correoJefe");
+
+  jefeSelect.addEventListener("change", () => {
+    const index = config.chiefs.indexOf(jefeSelect.value);
+
+    if (index >= 0) {
+      correoJefeInput.value = config.chiefEmails[index];
+    } else {
+      correoJefeInput.value = "";
+    }
+  });
 }
 
 form.addEventListener("submit", async (event) => {

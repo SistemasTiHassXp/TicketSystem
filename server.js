@@ -28,6 +28,22 @@ const AREAS = [
   "RESTAURANTE & CLUB"
 ];
 
+const CHIEFS = [
+  "GIANELLA CHAVEZ RIVERA",
+  "PAULO TUBINO DE MIRANDA",
+  "CLAUDIA CHAVEZ ARCE",
+  "ROSAURA CARBAJAL SAYAN",
+  "RENZO COPELLO SAYAN"
+];
+
+const CHIEF_EMAILS = [
+  "GIANELLA.CHAVEZ@HASSXP.COM",
+  "PAULO.TUBINO@HASSXP.COM",
+  "CLAUDIA.CHAVEZ@HASSXP.COM",
+  "ROSAURA.CARBAJAL@HASSXP.COM",
+  "RENZO.COPELLO@HASSXP.COM"
+];
+
 const INCIDENT_TYPES = [
   "HARDWARE (PC no enciende, daño físico)",
   "SOFTWARE (Error en programas, Office)",
@@ -345,7 +361,7 @@ async function handleApi(req, res) {
   const url = new URL(req.url, `http://${req.headers.host}`);
 
   if (req.method === "GET" && url.pathname === "/api/config") {
-    jsonResponse(res, 200, { areas: AREAS, incidentTypes: INCIDENT_TYPES, priorities: PRIORITIES });
+    jsonResponse(res, 200, { areas: AREAS, chiefs: CHIEFS, chiefEmails: CHIEF_EMAILS,incidentTypes: INCIDENT_TYPES, priorities: PRIORITIES });
     return;
   }
 
